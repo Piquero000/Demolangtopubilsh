@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<title>Box Model Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c3f);
+      color: #f0f0f0;
+    }
+
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      background: #2a2a3d;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      color: #ffcc66;
+    }
+
+    .box p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .box ul, .box ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: #ffcc66;
+      color: #1e1e2f;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .footer {
+      grid-column: 1 / 3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .footer {
+        grid-column: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model — Sample 1 Layout</h1>
+
+  <div class="container">
+    <!-- Box A -->
+    <div id="box-a" class="box">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.3LfMwfhzYwlp4eWkpv8BgQHaFA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image A" />
+      <h2>Box A — Mount Everest</h2>
+      <p>Mount Everest, known as the highest mountain in the world</p>
+      <ul>
+        <li>29,032 feet</li>
+        <li>8,848 meters</li>
+        <li>location between Nepal and China</li>
+      </ul>
+      <div class="links">
+        <a href="#box-b">Go to Box B</a>
+         <a href="#footer">Go to Footer</a>
+
+      </div>
+    </div>
+    <!-- Box B -->
+    <div id="box-b" class="box">
+      <img src="https://greenglobaltravel.com/wp-content/uploads/2018/03/Kilimanjaro-Tanzania-National-Park.jpg" alt="Image B" />
+      <h2>Box B — MOUNT KILIMANJARO</h2>
+      <p>Mount Kilimanjaro is world renowned as the highest mountain in Africa, one of the famed Seven Summits.</p>
+      <ol>
+        <li>Towering at 19,340 feet</li>
+        <li>First climbed in 1889</li>
+      </ol>
+      <div class="links">
+        <a href="#box-c">Back to Box C</a>
+      </div>
+    </div>
+
+    <!-- Box C -->
+    <div id="box-c" class="box">
+      <img src="https://greenglobaltravel.com/wp-content/uploads/2019/05/Best-Mountains-in-Africa-Table-Mountain-by-Ulrike-Mai-from-Pixabay.jpg" alt="Image C" />
+      <h2>Box C — Table Mountain</h2>
+      <p>One of the most unique natural structures on the planet, this aptly named South Africa attraction looks like a piece of furniture for the gods.</p>
+      <ul>
+        <li>Table Mountain is one of the shortest mountains </li>
+        <li>3,558 feet</li>
+        <li>the mountain is a picturesque landmark</li>
+      </ul>
+      <div class="links">
+        <a href="#box-d">Go to Box D</a>
+      </div>
+    </div>
+
+    <!-- Box D -->
+    <div id="box-d" class="box">
+      <img src="https://i.pinimg.com/736x/f5/eb/c7/f5ebc7aa7a4eb51bfa617752e08f0579.jpg" alt="Image D" />
+      <h2>Box D —Mount Fuji</h2>
+      <p>Mount Fuji Japan </p>
+        <ol>
+        <li> 12,400 feet tall.</li>
+        <li>Japan’s #1 tourist attraction.</li>
+        <li>Approximately 200,000 people make it to the summit annually.</li>
+      </ol>
+      <div class="links">
+        <a href="#box-a">Back to Box A</a>
+      </div>
+    </div>
+
+    <!-- Footer Box -->
+    <div id="footer" class="box footer">
+      <img src="https://i.pinimg.com/736x/61/cf/88/61cf881071b5f3ba9c015d2b83ac593b.jpg" alt="Footer Image" />
+      <h2>Footer — Best Mountain in the world</h2>
+      <p>Explore more about the 20 best Mountains:</p>
+      <ul>
+        <li><a href="https://greenglobaltravel.com/best-mountains-in-the-world-travel-bucket-list/" target="_blank">World travel bucket list</a></li>
+        <li><a href="https://www.youtube.com/watch?v=xDsRn4WPZpk" target="_blank">Top 20 highest mountain ranges in the world</a></li>
+      </ul>
+      <div class="links">
+        <a href="#box-a">Box A</a
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
